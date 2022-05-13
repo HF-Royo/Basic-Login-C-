@@ -1,0 +1,42 @@
+using System;
+
+class Program
+{
+    static void Main() {
+        
+        Console.Write("Enter a Username: ");
+        string UN = Console.ReadLine();
+        
+        Console.Write("Enter a Password: ");
+        string PW = Console.ReadLine();
+        
+        Console.WriteLine("");
+        
+        Console.WriteLine("============================");
+        
+        Console.Write("Enter your Username: ");
+        string NU = Console.ReadLine();
+        
+        Console.Write("Enter your Password: ");
+        string NPW = Console.ReadLine();
+        
+        if (UN != NU && PW == NPW){
+            
+            Console.WriteLine("You entered an Invalid User name");
+            
+        }else if (UN == NU && PW != NPW){
+            
+            Console.WriteLine("You entered an Invalid Password");
+            
+        }else if (UN != NU && PW != NPW){
+            
+            Console.WriteLine("You entered an Invalid User name and Password");
+            
+        }else{
+            
+            Console.WriteLine("Successful Login");
+            
+        }
+        
+    }
+}
